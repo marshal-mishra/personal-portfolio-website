@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #033daa;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #071e88;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>My name is Marshal Bishu Mishra. I am currently pursuing a Bachelor of Computer Applications (BCA) and am passionate about building a strong career in the IT industry. Alongside my studies, I am also preparing for the IB ACIO exam, as I have a keen interest in serving the nation through a reputed government role.
+
+                I am focused on improving my English communication skills and constantly working on my personal and professional growth. My dream is to work at a top IT company like TCS, especially in roles like TCS Digital or as a Software Developer, with a strong grip on Java and related technologies.
+                
+                I believe in consistent hard work, smart planning, and staying updated with the latest trends in technology to achieve my goals.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://1.bp.blogspot.com/-i78iKr_P9Pk/X9ohjXyc5eI/AAAAAAAAA_4/8UauxZaOgUshGK7MXwW1gZqts7Zrf_AewCLcBGAsYHQ/s1280/Todo%2BList%2BApp%2Busing%2BHTML%2BCSS%2B%2526%2BJavaScript.webp" alt="Project 1">
+                    <h3>To-Do List Web Page</h3>
+                    <p>Build a simple to-do list application where users can add, edit, and delete tasks. The app can also allow users to mark tasks as completed</p>
+                </div>
+                <div class="project">
+                    <img src="https://cdn.prod.website-files.com/5b5729421aca332c60585f78/654412525c86c47c06167f84_simple-quiz-popup-c.png" alt="Project 2">
+                    <h3>Quiz App</h3>
+                    <p>Create a quiz app where users can answer multiple-choice questions, and at the end, they can view their score.</p>
+                </div>
+                <div class="project">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E12AQGXNk6g7o6R3Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1638904437200?e=2147483647&v=beta&t=5dEkAy0HVNEV0kkVsiNT66oqadP6ZWDSJAs6V2l52M0" alt="Project 3">
+                    <h3>Recipe Finder</h3>
+                    <p>Build an app where users can search for recipes by ingredients, cuisine type, or dietary restrictions. You can use a public recipe API to fetch the data.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: marshalbishu@gmail.com</p>
+            <p>Phone: 8709742828</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
